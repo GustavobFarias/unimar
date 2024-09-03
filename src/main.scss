@@ -31,10 +31,6 @@ header {
         height: 32px;
     }
 
-    .nav-list {
-        list-style: none;
-    }
-
     .nav-item {
         display: inline;
         cursor: pointer;
@@ -57,6 +53,10 @@ header {
     }
 }
 
+.nav-list {
+    list-style: none;
+}
+
 .graduacao-ads {
     width: 100%;
 }
@@ -65,8 +65,8 @@ header {
     .container-main {
         visibility: hidden;
 
-        .sala-de-aula {
-            height: 350px;
+        .img-tecnologia {
+            height: 500px;
             margin-right: 2em;
             border-radius: 8px;
         }
@@ -82,11 +82,8 @@ header {
                     margin-bottom: 32px;
                     border-right: 5px solid #fff;
                     white-space: nowrap;
-        
                     overflow: hidden;
-        
                     width: 0;
-        
                     animation: mark .8s step-end infinite, write 10s steps(34, end) infinite;
                 }
                 @keyframes mark {
@@ -110,30 +107,52 @@ header {
                 }
             
             }
-            }
+        }
         
-            h3 {
-                color: #fff;
-                margin: 18px 0 8px;
-                font-weight: bold;
+        .objetivo-ads {
+            display: flex;
+            align-items: center;
+            .objetivo {
+                max-width: 500px;
+                
+                h3 {
+                    color: #fff;
+                    margin: 18px 0 22px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            
+                p {
+                    margin-bottom: 18px;
+                    margin-right: 2em;
+                }
+    
+                span {
+                    font-weight: bold;
+                    color: #00d9ed;
+                }
             }
+
+            .sala-de-aula {
+                height: 350px;
+                border-radius: 8px;
+                
+            }
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+            margin: 16px 0;
+            font-size: 32px;
+        }
         
-            p {
-                margin-bottom: 8px;
-            }
+        p {
+            color: #fff;
+            max-width: 500px;
+            text-align: justify;
+        }
     }
 }
 
-h2 {
-    font-family: "Nerko One", cursive;
-    text-align: center;
-    color: #fff;
-    margin: 16px 0;
-    font-size: 32px;
-}
 
-p {
-    color: #fff;
-    max-width: 500px;
-    text-align: justify;
-}

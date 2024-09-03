@@ -28,9 +28,6 @@ header .header-container {
 header .logo-unimar {
   height: 32px;
 }
-header .nav-list {
-  list-style: none;
-}
 header .nav-item {
   display: inline;
   cursor: pointer;
@@ -50,6 +47,10 @@ header .nav-links {
   padding: 8px;
 }
 
+.nav-list {
+  list-style: none;
+}
+
 .graduacao-ads {
   width: 100%;
 }
@@ -57,8 +58,8 @@ header .nav-links {
 #ads .container-main {
   visibility: hidden;
 }
-#ads .container-main .sala-de-aula {
-  height: 350px;
+#ads .container-main .img-tecnologia {
+  height: 500px;
   margin-right: 2em;
   border-radius: 8px;
 }
@@ -94,24 +95,38 @@ header .nav-links {
     width: 0;
   }
 }
-#ads .container-main h3 {
+#ads .container-main .objetivo-ads {
+  display: flex;
+  align-items: center;
+}
+#ads .container-main .objetivo-ads .objetivo {
+  max-width: 500px;
+}
+#ads .container-main .objetivo-ads .objetivo h3 {
   color: #fff;
-  margin: 18px 0 8px;
+  margin: 18px 0 22px;
   font-weight: bold;
+  text-align: center;
 }
-#ads .container-main p {
-  margin-bottom: 8px;
+#ads .container-main .objetivo-ads .objetivo p {
+  margin-bottom: 18px;
+  margin-right: 2em;
 }
-
-h2 {
-  font-family: "Nerko One", cursive;
+#ads .container-main .objetivo-ads .objetivo span {
+  font-weight: bold;
+  color: #00d9ed;
+}
+#ads .container-main .objetivo-ads .sala-de-aula {
+  height: 350px;
+  border-radius: 8px;
+}
+#ads .container-main h2 {
   text-align: center;
   color: #fff;
   margin: 16px 0;
   font-size: 32px;
 }
-
-p {
+#ads .container-main p {
   color: #fff;
   max-width: 500px;
   text-align: justify;
