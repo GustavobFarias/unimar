@@ -4,45 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unimar tecnologia</title>
-    <link rel="stylesheet" href="./src/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./build/main.css">
 </head>
 <body>
     <header>
-       <div class="container header-container">
-            <img class="logo-unimar" src="img/logo.svg" alt="logo da unimar">
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-links" href="#">ADS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-links" href="#">Ciências da computação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-links" href="#">Inteligencia Artificial</a>
-                    </li>
-                </ul>
-            </nav>
-       </div>
+    <div class="container header-container">
+        <img class="logo-unimar" src="img/logo.svg" alt="logo da unimar">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-links" href="#ads">ADS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-links" href="#">Ciências da computação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-links" href="#">Inteligencia Artificial</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     </header>
     <main>
-        <section class="ads">
+        <section id="ads">
             <img class="graduacao-ads" src="img/analise-e-desenvolvimento-de-sistemas-1570493102.png" alt="">
-            <div class="container">           
+            <div class="container container-main">           
                 <h2>Sobre</h2>
-            <div class="sobre">
-                <img class="sala-de-aula" src="img/IMG_3439-scaled.webp" alt="sala da unimar">
-                <p>Análise e Desenvolvimento de Sistemas é um curso superior voltado para a formação de profissionais capazes de criar, implementar e gerenciar soluções tecnológicas. O objetivo é preparar o aluno para atuar no desenvolvimento de sistemas e na análise das necessidades de empresas e usuários.</p>
-            </div>
+                <div class="sobre">
+                    <img class="sala-de-aula" src="img/IMG_3439-scaled.webp" alt="sala da unimar">
+                    <div class="container-sobre">
+                        <h1 class="title">Análise e Desenvolvimento de Sistemas</h1>
+                    <p>
+                        O curso de Análise e Desenvolvimento de Sistemas forma profissionais capacitados para criar, implementar e gerenciar sistemas de software eficientes e adaptáveis às necessidades de diferentes organizações. Focado em soluções tecnológicas práticas e inovadoras, o curso prepara os alunos para enfrentar desafios no desenvolvimento de software e na análise de sistemas.
+                    </p>
+                    </div>
+                </div>
+                <h3>Objetivos do Curso</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Analisar Requisitos: Compreender e documentar as necessidades dos usuários para criar soluções que atendam às suas expectativas e requisitos.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Desenvolver Sistemas: Projetar e construir aplicações de software, desde a criação da interface do usuário até a implementação da lógica de negócios e gerenciamento de dados.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Gerenciar Projetos: Aplicar técnicas de gerenciamento para planejar, executar e monitorar projetos de desenvolvimento de software de maneira eficiente.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Qualidade e Testes de Software: Ensinar como garantir a qualidade do software através de práticas de testes, depuração e revisão de código.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Banco de Dados: Desenvolver habilidades para projetar, implementar e gerenciar bancos de dados, fundamentais para o armazenamento e manipulação de dados em sistemas de informação.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Segurança da Informação: Introduzir práticas de segurança cibernética para proteger sistemas e dados contra ameaças e ataques.
+                                </p>
+                            </li>
+                        </ul>
             </div>
         </section>
     </main>
-    
+    <script src="src/main.js"></script>
 </body>
 </html>
