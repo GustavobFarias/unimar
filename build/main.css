@@ -5,6 +5,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1023px;
   width: 100%;
@@ -17,16 +21,17 @@ body {
 }
 
 header {
-  background-color: #0072BC;
   padding: 32px 0;
+  background-color: #0072BC;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-header .logo-unimar {
-  height: 32px;
 }
 header .nav-item {
   display: inline;
@@ -47,6 +52,10 @@ header .nav-links {
   padding: 8px;
 }
 
+.logo-unimar {
+  height: 32px;
+}
+
 .nav-list {
   list-style: none;
 }
@@ -55,20 +64,25 @@ header .nav-links {
   width: 100%;
 }
 
-#ads .container-main {
+#sobre {
+  padding-top: 5rem;
+}
+#sobre .container-main {
   visibility: hidden;
 }
-#ads .container-main .img-tecnologia {
+#sobre .container-main .img-tecnologia {
   height: 500px;
   margin-right: 2em;
   border-radius: 8px;
 }
-#ads .container-main .sobre {
+#sobre .container-main .sobre {
   display: flex;
   margin-right: 16px;
 }
-#ads .container-main .sobre .container-sobre .title {
+#sobre .container-main .sobre .container-sobre .title {
   color: #fff;
+  -webkit-text-stroke: 0.8px #00d9ed;
+  text-shadow: 0 0 4px #00d9ed;
   margin-bottom: 32px;
   border-right: 5px solid #fff;
   white-space: nowrap;
@@ -95,41 +109,100 @@ header .nav-links {
     width: 0;
   }
 }
-#ads .container-main .objetivo-ads {
+
+#objetivo {
+  padding-top: 5rem;
+}
+#objetivo .objetivo-ads {
   display: flex;
   align-items: center;
 }
-#ads .container-main .objetivo-ads .objetivo {
+#objetivo .objetivo-ads .container-main {
+  visibility: hidden;
+}
+#objetivo .objetivo-ads .container-main .objetivo {
   max-width: 500px;
 }
-#ads .container-main .objetivo-ads .objetivo h3 {
+
+#area {
+  padding-top: 5rem;
+}
+#area .container-main {
+  visibility: hidden;
+}
+#area .container-main .area-atuacao {
+  display: flex;
+  align-items: center;
+}
+#area .container-main .area-atuacao .ads-unimar {
+  margin-right: 28px;
+}
+#area .container-main .area-atuacao .area {
+  text-align: center;
+}
+
+#importancia {
+  padding-top: 5rem;
+}
+#importancia .importancia-mercado .importancia-mercado-trabalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#importancia .importancia-mercado .importancia-mercado-trabalho .mercado-trabalho {
+  background-color: #000E2D;
+  padding: 18px;
+  max-width: 50%;
+  border-radius: 8px;
+  box-shadow: 5px 5px 50px #00bad4;
+  margin-bottom: 100px;
+}
+#importancia .importancia-mercado .importancia-mercado-trabalho .mercado-trabalho p {
+  text-align: center;
+}
+
+.sala-de-aula, .ads-unimar {
+  height: 350px;
+  border-radius: 8px;
+}
+
+h3 {
   color: #fff;
   margin: 18px 0 22px;
   font-weight: bold;
   text-align: center;
 }
-#ads .container-main .objetivo-ads .objetivo p {
+
+p {
   margin-bottom: 18px;
   margin-right: 2em;
 }
-#ads .container-main .objetivo-ads .objetivo span {
+
+span {
   font-weight: bold;
   color: #00d9ed;
 }
-#ads .container-main .objetivo-ads .sala-de-aula {
-  height: 350px;
-  border-radius: 8px;
-}
-#ads .container-main h2 {
+
+h2 {
   text-align: center;
   color: #fff;
   margin: 16px 0;
   font-size: 32px;
 }
-#ads .container-main p {
+
+p {
   color: #fff;
   max-width: 500px;
   text-align: justify;
+}
+
+footer {
+  background-color: #000E2D;
+  height: 300px;
+}
+footer .icons {
+  height: 16px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

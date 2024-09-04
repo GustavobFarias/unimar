@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "sass": "^1.77.8"
+    "sass": "^1.78.0"
   },
   "scripts": {
     "sass": "sass ./src/main.scss ./build/main.css --watch",
@@ -11,5 +11,8 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
+  }
 }

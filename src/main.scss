@@ -5,6 +5,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 1023px;
     width: 100%;
@@ -17,18 +21,16 @@ body {
 }
 
 header {
-    background-color: #0072BC;
     padding: 32px 0;
-
+    background-color: #0072BC;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    
-    }
-
-    .logo-unimar {
-        height: 32px;
     }
 
     .nav-item {
@@ -53,6 +55,10 @@ header {
     }
 }
 
+.logo-unimar {
+    height: 32px;
+}
+
 .nav-list {
     list-style: none;
 }
@@ -61,7 +67,8 @@ header {
     width: 100%;
 }
 
-#ads {
+#sobre {
+    padding-top: 5rem;
     .container-main {
         visibility: hidden;
 
@@ -79,6 +86,8 @@ header {
         
                 .title {
                     color: #fff;
+                    -webkit-text-stroke: .8px #00d9ed;
+                    text-shadow: 0 0 4px #00d9ed;
                     margin-bottom: 32px;
                     border-right: 5px solid #fff;
                     white-space: nowrap;
@@ -108,51 +117,114 @@ header {
             
             }
         }
+}
+}
+
+#objetivo {
+    padding-top: 5rem;
+    .objetivo-ads {
+        display: flex;
+        align-items: center;
         
-        .objetivo-ads {
-            display: flex;
-            align-items: center;
+        .container-main {
+            visibility: hidden;
+            
             .objetivo {
                 max-width: 500px;
-                
-                h3 {
-                    color: #fff;
-                    margin: 18px 0 22px;
-                    font-weight: bold;
-                    text-align: center;
-                }
-            
-                p {
-                    margin-bottom: 18px;
-                    margin-right: 2em;
-                }
-    
-                span {
-                    font-weight: bold;
-                    color: #00d9ed;
-                }
             }
-
-            .sala-de-aula {
-                height: 350px;
-                border-radius: 8px;
-                
-            }
-        }
-
-        h2 {
-            text-align: center;
-            color: #fff;
-            margin: 16px 0;
-            font-size: 32px;
         }
         
-        p {
-            color: #fff;
-            max-width: 500px;
-            text-align: justify;
+    } 
+}
+
+#area {
+    padding-top: 5rem;
+
+    .container-main {
+    visibility: hidden;
+
+    .area-atuacao {
+        display: flex;
+        align-items: center;
+
+        .ads-unimar {
+            margin-right: 28px;
+        }
+
+        .area {
+            text-align: center;
         }
     }
 }
+}
 
+#importancia {
+    padding-top: 5rem;
 
+    .importancia-mercado {
+        
+        .importancia-mercado-trabalho {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .mercado-trabalho {
+                background-color: #000E2D;
+                padding: 18px;
+                max-width: 50%;
+                border-radius: 8px;
+                box-shadow: 5px 5px 50px #00bad4;
+                margin-bottom: 100px;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    } 
+}
+
+.sala-de-aula, .ads-unimar {
+    height: 350px;
+    border-radius: 8px;
+}
+
+h3 {
+    color: #fff;
+    margin: 18px 0 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 18px;
+    margin-right: 2em;
+}
+
+span {
+    font-weight: bold;
+    color: #00d9ed;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 32px;
+}
+
+p {
+    color: #fff;
+    max-width: 500px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #000E2D;
+    height: 300px;
+
+    .icons {
+        height: 16px;
+        cursor: pointer;
+    }
+}
