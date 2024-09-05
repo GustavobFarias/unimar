@@ -22,7 +22,7 @@ html {
 
 .body-ciencias {
   visibility: hidden;
-  background: linear-gradient(to top left, #000E2D, #012e57, #00345B, #016D9E, #008DAB);
+  background: linear-gradient(to top, #000E2D, #012e57, #00345B, #016D9E, #008DAB);
 }
 
 header {
@@ -156,15 +156,19 @@ header .nav-links {
 #objetivo {
   padding-top: 5rem;
 }
-#objetivo .objetivo-ads {
+#objetivo .objetivo-ads, #objetivo .objetivo-ciencias {
   display: flex;
   align-items: center;
 }
-#objetivo .objetivo-ads .container-main {
+#objetivo .objetivo-ads .container-main, #objetivo .objetivo-ciencias .container-main {
   visibility: hidden;
 }
-#objetivo .objetivo-ads .container-main .objetivo {
+#objetivo .objetivo-ads .container-main .objetivo, #objetivo .objetivo-ciencias .container-main .objetivo {
   max-width: 500px;
+  display: flex;
+}
+#objetivo .objetivo-ads .objetivo-conteudo, #objetivo .objetivo-ciencias .objetivo-conteudo {
+  display: flex;
 }
 
 #area {
@@ -255,11 +259,39 @@ h2 {
 
 footer {
   background-color: #000E2D;
-  height: 300px;
+}
+footer .endereco .logo-unimar {
+  margin: 32px 0 16px 0;
+}
+footer .endereco .contato {
+  margin-bottom: 32px;
+}
+footer .endereco p {
+  margin-bottom: 32px;
 }
 footer .icons {
   height: 16px;
   cursor: pointer;
+}
+footer .icon-whatts, footer .icon-tell, footer .icon-email {
+  display: flex;
+}
+footer .icon-whatts img, footer .icon-tell img, footer .icon-email img {
+  margin-right: 8px;
+}
+footer .copy p {
+  margin: 0;
+  margin: 0 auto;
+}
+footer .container-contato {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+footer .container-contato .redes-sociais img {
+  display: block;
+  margin-top: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */
