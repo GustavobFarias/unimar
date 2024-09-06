@@ -333,7 +333,143 @@ footer {
             img {
                 display: block;
                 margin-top: 12px;
+
+                &:hover {
+                    transform: scale(1.2);
+                    transition: all ease 0.5s;
+                }
             }
         }
+    }
+}
+
+.body-unimar {
+        background-image: url('../img/unimar.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        opacity: 1;
+
+        h1 {
+            color: #fff;
+            -webkit-text-stroke: .8px #00d9ed;
+            text-shadow: 0 0 4px #00d9ed;
+            text-align: center;
+            padding-top: 50px;
+            font-size: 3em;
+        }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo {
+        display: flex;
+    }
+    
+    .ads, .ciencias {
+        width: 380px;
+        height: 90px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        margin-top: 100px;
+        margin-right: 50px;
+
+        &:hover {
+            box-shadow: 5px 5px 40px #008DAB;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .content .link-ads {
+        color: #fff;
+        -webkit-text-stroke: .8px #00d9ed;
+        text-shadow: 0 0 4px #00d9ed;
+        text-decoration: none;
+        padding: 36px 54px;
+        border-radius: 10px;
+    }
+
+    .container .link-ciencias {
+        color: #fff;
+        -webkit-text-stroke: .8px #00d9ed;
+            text-shadow: 0 0 4px #00d9ed;
+        text-decoration: none;
+        padding: 36px 102px;
+        border-radius: 10px;
+    }
+
+    .ads::after, .ciencias::after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        top: -25px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        animation: animategradient 5s linear infinite;
+    }
+    @keyframes animategradient {
+        0% {
+            background-color: #008DAB;
+            box-shadow: 0px 0px 20px 20px #008DAB;
+            transform: translate(-50%, 0%);
+        }
+
+        20% {
+            background-color: #008DAB;
+            box-shadow: 0px 0px 20px 20px #008DAB;
+            transform: translate(520%, 0%);
+        }
+
+        40% {
+            background-color: #008DAB;
+            box-shadow: 0px 0px 20px 20px #008DAB;
+            transform: translate(450%, 400%);
+        }
+
+        60% {
+            background-color: #000E2D;
+            box-shadow: 0px 0px 20px 20px #000E2D;
+            transform: translate(-550, 400%);
+        }
+
+        80% {
+            background-color: #000E2D;
+            box-shadow: 0px 0px 20px 20px #000E2D;
+            transform: translate(-550, 50%);
+        }
+
+        100% {
+            background-color: #000E2D;
+            box-shadow: 0px 0px 20px 20px #000E2D;
+            transform: translate(-50%, 0%);
+        }
+    } 
+
+    .ads::before, .ciencias::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(50deg, #012e57, #00345B, #016D9E);
     }
 }
