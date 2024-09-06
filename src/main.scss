@@ -25,6 +25,11 @@ html {
     background: linear-gradient(to top ,#000E2D, #012e57, #00345B, #016D9E, #008DAB);
 }
 
+.body-ia {
+    visibility: hidden;
+    background: linear-gradient(to top left ,#000E2D, #012e57, #00345B, #016D9E, #008DAB);
+}
+
 header {
     padding: 32px 0;
     background-color: #0072BC;
@@ -92,13 +97,19 @@ header {
             border-radius: 8px;
         }
 
+        .img-ia {
+            height: 400px;
+            margin-right: 50px;
+            border-radius: 12px;
+        }
+
         .sobre {
             display: flex;
             margin-right: 16px;
         
             .container-sobre {
         
-                .title-ads {
+                .title-ads, .title-computacao, .title-ia {
                     color: #fff;
                     -webkit-text-stroke: .8px #00d9ed;
                     text-shadow: 0 0 4px #00d9ed;
@@ -107,14 +118,17 @@ header {
                     white-space: nowrap;
                     overflow: hidden;
                     width: 0;
-                    animation: mark .8s step-end infinite, write 10s steps(34, end) infinite;
                 }
-                @keyframes mark {
+
+                .title-ads {
+                    animation: analise .8s step-end infinite, sistema 10s steps(34, end) infinite;
+                }
+                @keyframes analise {
                     50% {
                         border-right-color: transparent;
                     }
                 }
-                @keyframes write {
+                @keyframes sistema {
                     20% {
                         width: 32ch;
                     }
@@ -130,14 +144,6 @@ header {
                 }
 
                 .title-computacao {
-                    color: #fff;
-                    -webkit-text-stroke: .8px #00d9ed;
-                    text-shadow: 0 0 4px #00d9ed;
-                    margin-bottom: 32px;
-                    border-right: 5px solid #fff;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    width: 0;
                     animation: ciencia .8s step-end infinite, computacao 10s steps(20, end) infinite;
                 }    
                 @keyframes ciencia {
@@ -159,9 +165,36 @@ header {
                         width: 0;
                     }
                 }
+
+                .title-ia {
+                    animation: inteligencia .8s step-end infinite, artificial 10s steps(22, end) infinite;
+                }
+                @keyframes inteligencia {
+                    50% {
+                        border-right-color: transparent;
+                    }
+                }
+                @keyframes artificial {
+                    20% {
+                        width: 17ch;
+                    }
+                    70% {
+                        width: 17ch;
+                    }
+                    80% {
+                        width: 0;
+                    }
+                    100% {
+                        width: 0;
+                    }
+                }
             }
         }
 }
+}
+
+.sobre-ia {
+    display: block;
 }
 
 #objetivo {
@@ -343,21 +376,22 @@ footer {
     }
 }
 
-.body-unimar {
-        background-image: url('../img/unimar.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-        opacity: 1;
 
-        h1 {
-            color: #fff;
-            -webkit-text-stroke: .8px #00d9ed;
-            text-shadow: 0 0 4px #00d9ed;
-            text-align: center;
-            padding-top: 50px;
-            font-size: 3em;
-        }
+.body-unimar {
+    background-image: linear-gradient(to left, #0000005e, #0000005e), url('../img/unimar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    h1 {
+        color: #fff;
+        -webkit-text-stroke: .8px #00d9ed;
+        text-shadow: 0 0 18px #00d9ed;
+        text-align: center;
+        padding-top: 50px;
+        font-size: 4em;
+    }
+
     .container {
         display: flex;
         justify-content: center;
@@ -368,7 +402,7 @@ footer {
         display: flex;
     }
     
-    .ads, .ciencias {
+    .ads, .ciencias, .ia {
         width: 380px;
         height: 90px;
         border-radius: 10px;
@@ -381,6 +415,16 @@ footer {
             box-shadow: 5px 5px 40px #008DAB;
             transition: all ease-in-out 0.3s;
         }
+    }
+
+    .ia {
+        margin-top: 50px;
+    }
+
+    .container-ia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .content {
@@ -407,13 +451,22 @@ footer {
     .container .link-ciencias {
         color: #fff;
         -webkit-text-stroke: .8px #00d9ed;
-            text-shadow: 0 0 4px #00d9ed;
+        text-shadow: 0 0 4px #00d9ed;
         text-decoration: none;
         padding: 36px 102px;
         border-radius: 10px;
     }
 
-    .ads::after, .ciencias::after {
+    .content .link-ia {
+        color: #fff;
+        -webkit-text-stroke: .8px #00d9ed;
+        text-shadow: 0 0 4px #00d9ed;
+        text-decoration: none;
+        padding: 36px 117px;
+        border-radius: 10px;
+    }
+
+    .ads::after, .ciencias::after, .ia::after {
         content: "";
         position: absolute;
         z-index: 0;
@@ -425,6 +478,7 @@ footer {
         border-radius: 50%;
         animation: animategradient 5s linear infinite;
     }
+
     @keyframes animategradient {
         0% {
             background-color: #008DAB;
@@ -463,7 +517,7 @@ footer {
         }
     } 
 
-    .ads::before, .ciencias::before {
+    .ads::before, .ciencias::before, .ia::before {
         content: "";
         position: absolute;
         top: 0;
@@ -472,4 +526,9 @@ footer {
         height: 100%;
         background: linear-gradient(50deg, #012e57, #00345B, #016D9E);
     }
+}
+
+.graduacao-ia {
+    width: 100%;
+    height: 80vh;
 }
