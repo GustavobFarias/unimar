@@ -25,11 +25,6 @@ html {
   background: linear-gradient(to top, #000E2D, #012e57, #00345B, #016D9E, #008DAB);
 }
 
-.body-ia {
-  visibility: hidden;
-  background: linear-gradient(to top left, #000E2D, #012e57, #00345B, #016D9E, #008DAB);
-}
-
 header {
   padding: 32px 0;
   background-color: #0072BC;
@@ -93,16 +88,11 @@ header .nav-links {
   margin-right: 2em;
   border-radius: 8px;
 }
-#sobre .container-main .img-ia {
-  height: 400px;
-  margin-right: 50px;
-  border-radius: 12px;
-}
 #sobre .container-main .sobre {
   display: flex;
   margin-right: 16px;
 }
-#sobre .container-main .sobre .container-sobre .title-ads, #sobre .container-main .sobre .container-sobre .title-computacao, #sobre .container-main .sobre .container-sobre .title-ia {
+#sobre .container-main .sobre .container-sobre .title-ads, #sobre .container-main .sobre .container-sobre .title-computacao {
   color: #fff;
   -webkit-text-stroke: 0.8px #00d9ed;
   text-shadow: 0 0 4px #00d9ed;
@@ -155,32 +145,6 @@ header .nav-links {
   100% {
     width: 0;
   }
-}
-#sobre .container-main .sobre .container-sobre .title-ia {
-  animation: inteligencia 0.8s step-end infinite, artificial 10s steps(22, end) infinite;
-}
-@keyframes inteligencia {
-  50% {
-    border-right-color: transparent;
-  }
-}
-@keyframes artificial {
-  20% {
-    width: 17ch;
-  }
-  70% {
-    width: 17ch;
-  }
-  80% {
-    width: 0;
-  }
-  100% {
-    width: 0;
-  }
-}
-
-.sobre-ia {
-  display: block;
 }
 
 #objetivo {
@@ -296,7 +260,7 @@ footer .endereco .logo-unimar {
 footer .endereco .contato {
   margin-bottom: 32px;
 }
-footer .endereco p {
+footer .endereco a {
   margin-bottom: 32px;
 }
 footer .icons {
@@ -308,6 +272,11 @@ footer .icon-whatts, footer .icon-tell, footer .icon-email {
 }
 footer .icon-whatts img, footer .icon-tell img, footer .icon-email img {
   margin-right: 8px;
+}
+footer .icon-whatts a, footer .icon-tell a, footer .icon-email a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 16px;
 }
 footer .copy p {
   margin: 0;
@@ -350,7 +319,7 @@ footer .container-contato .redes-sociais img:hover {
 .body-unimar .conteudo {
   display: flex;
 }
-.body-unimar .ads, .body-unimar .ciencias, .body-unimar .ia {
+.body-unimar .ads, .body-unimar .ciencias {
   width: 380px;
   height: 90px;
   border-radius: 10px;
@@ -359,17 +328,9 @@ footer .container-contato .redes-sociais img:hover {
   margin-top: 100px;
   margin-right: 50px;
 }
-.body-unimar .ads:hover, .body-unimar .ciencias:hover, .body-unimar .ia:hover {
+.body-unimar .ads:hover, .body-unimar .ciencias:hover {
   box-shadow: 5px 5px 40px #008DAB;
   transition: all ease-in-out 0.3s;
-}
-.body-unimar .ia {
-  margin-top: 50px;
-}
-.body-unimar .container-ia {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .body-unimar .content {
   width: 100%;
@@ -398,15 +359,7 @@ footer .container-contato .redes-sociais img:hover {
   padding: 36px 102px;
   border-radius: 10px;
 }
-.body-unimar .content .link-ia {
-  color: #fff;
-  -webkit-text-stroke: 0.8px #00d9ed;
-  text-shadow: 0 0 4px #00d9ed;
-  text-decoration: none;
-  padding: 36px 117px;
-  border-radius: 10px;
-}
-.body-unimar .ads::after, .body-unimar .ciencias::after, .body-unimar .ia::after {
+.body-unimar .ads::after, .body-unimar .ciencias::after {
   content: "";
   position: absolute;
   z-index: 0;
@@ -450,7 +403,7 @@ footer .container-contato .redes-sociais img:hover {
     transform: translate(-50%, 0%);
   }
 }
-.body-unimar .ads::before, .body-unimar .ciencias::before, .body-unimar .ia::before {
+.body-unimar .ads::before, .body-unimar .ciencias::before {
   content: "";
   position: absolute;
   top: 0;
@@ -458,11 +411,6 @@ footer .container-contato .redes-sociais img:hover {
   width: 100%;
   height: 100%;
   background: linear-gradient(50deg, #012e57, #00345B, #016D9E);
-}
-
-.graduacao-ia {
-  width: 100%;
-  height: 80vh;
 }
 
 /*# sourceMappingURL=main.css.map */
