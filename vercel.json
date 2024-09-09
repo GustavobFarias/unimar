@@ -1,0 +1,1 @@
+{ "rewrites": [{ "souuce": "/9.*", "destination": "/"}] }
