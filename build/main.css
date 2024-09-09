@@ -16,12 +16,10 @@ html {
 }
 
 .body-ads {
-  visibility: hidden;
   background: linear-gradient(to right, #000E2D, #012e57, #00345B, #016D9E, #008DAB);
 }
 
 .body-ciencias {
-  visibility: hidden;
   background: linear-gradient(to top, #000E2D, #012e57, #00345B, #016D9E, #008DAB);
 }
 
@@ -74,9 +72,6 @@ header .nav-links {
 }
 #sobre h2 {
   margin-bottom: 32px;
-}
-#sobre .container-main {
-  visibility: hidden;
 }
 #sobre .container-main .img-ads {
   height: 500px;
@@ -154,9 +149,6 @@ header .nav-links {
   display: flex;
   align-items: center;
 }
-#objetivo .objetivo-ads .container-main, #objetivo .objetivo-ciencias .container-main {
-  visibility: hidden;
-}
 #objetivo .objetivo-ads .container-main .objetivo, #objetivo .objetivo-ciencias .container-main .objetivo {
   max-width: 500px;
   display: flex;
@@ -167,9 +159,6 @@ header .nav-links {
 
 #area {
   padding-top: 5rem;
-}
-#area .container-main {
-  visibility: hidden;
 }
 #area .container-main .area-atuacao {
   display: flex;

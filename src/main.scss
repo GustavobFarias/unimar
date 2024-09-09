@@ -16,12 +16,10 @@ html {
 }
 
 .body-ads {
-    visibility: hidden;
     background: linear-gradient(to right,#000E2D, #012e57, #00345B, #016D9E, #008DAB);
 }
 
 .body-ciencias {
-    visibility: hidden;
     background: linear-gradient(to top ,#000E2D, #012e57, #00345B, #016D9E, #008DAB);
 }
 
@@ -79,7 +77,6 @@ header {
         margin-bottom: 32px;
     }
     .container-main {
-        visibility: hidden;
 
         .img-ads {
             height: 500px;
@@ -167,7 +164,6 @@ header {
         align-items: center;
         
         .container-main {
-            visibility: hidden;
             
             .objetivo {
                 max-width: 500px;
@@ -185,7 +181,6 @@ header {
     padding-top: 5rem;
 
     .container-main {
-    visibility: hidden;
 
     .area-atuacao {
         display: flex;
